@@ -29,7 +29,7 @@ height: 56px;
 
 border-radius: 20px;
 border: 1px solid var(--color-dark-blue);
-opacity: 0px;
+
 color: var(--color-dark-blue);
 cursor: pointer;
 
@@ -43,7 +43,7 @@ top: 568px;
 left: 186px;
 gap: 0px;
 border-radius: 20px;
-opacity: 0px;
+
 color: white;
 background-color: var(--color-dark-blue);
 cursor: pointer;
