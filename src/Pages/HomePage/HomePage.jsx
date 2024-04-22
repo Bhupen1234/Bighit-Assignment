@@ -6,6 +6,9 @@ import ProductContext from "../../context/productContext";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { useNavigate } from "react-router-dom";
 
+import FavIcon from "../../icons/Heart.png"
+import HomeIcon from "../../icons/home.png"
+
 
 const HomePage = () => {
 
@@ -16,14 +19,14 @@ const HomePage = () => {
       <div className={styles.header}>
         <div className={styles.usernameCart}>
             <h2>Hey, Rahul</h2>
-            <Badge badgeContent={cartData.length} color="success"   anchorOrigin={{
-    vertical: 'top',
-    horizontal: 'right',
+            <Badge badgeContent={cartData.length} color="success"   anchorOrigin={{  vertical: 'top', horizontal: 'right',
   }}>
               <IconButton>
                 <i class="fa-solid fa-cart-shopping fa-2xl" style={{color:"white"}} onClick={()=>navigate('/cart')}></i>
               </IconButton>
             </Badge>
+
+           
             
            
         </div>
@@ -37,7 +40,7 @@ const HomePage = () => {
         </div>
 
         <div className={styles.deliveryDetails}>
-          <div>
+          <div >
             <h4 className="bold" style={{opacity:"0.5",marginBottom:"10px"}}>DELIVERY TO</h4>
             <h3 className="medium" >Green Way 3000, Sylhet</h3>
 
@@ -78,9 +81,19 @@ const HomePage = () => {
          </Grid>
       </div>
 
+     {/* <div className={styles.footer}>
+        <div className={styles.homeIcon}  style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"2px",flexDirection:"column"}}>
+              <img src={HomeIcon} alt="HomeIcon" />
+              <p>Home</p>
+        </div>
 
-
-    </div>
+        <div className={styles.favIcon}  style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"2px",flexDirection:"column"}}>
+             <img src={FavIcon} alt="FavIcon" />
+             <p>Favourite</p>
+        </div>
+     </div> */}
+    
+     </div>
   );
 };
 

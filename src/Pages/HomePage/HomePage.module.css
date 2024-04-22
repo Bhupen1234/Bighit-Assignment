@@ -118,3 +118,18 @@ button[type="submit"]:hover {
     align-items: center;
 
 }
+
+
+.footer{
+    height: 89px;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgb(242, 224, 224);
+    position: fixed;
+    bottom: 0;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

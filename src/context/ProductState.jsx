@@ -7,8 +7,7 @@ const ProductState = ({children}) => {
     const getLocalStorageCartData=()=>{
         const localStorageCartData=localStorage.getItem("cartItems");
         return localStorageCartData ? JSON.parse(localStorageCartData) : [];
-  
-      }
+    }
   const [productsData ,setProductsData] = useState([]);
   const {enqueueSnackbar} = useSnackbar()
 
@@ -16,6 +15,8 @@ const ProductState = ({children}) => {
 
   const fetchProducts =async()=>{
     const response = await axios.get("https://dummyjson.com/products?limit=25");
+    
+
     setProductsData(response.data.products);
   }
 
@@ -23,6 +24,9 @@ const ProductState = ({children}) => {
   useEffect(()=>{
   fetchProducts();
   },[])
+
+
+  
 
 
   const addProductToCart = (productDetails)=>{
