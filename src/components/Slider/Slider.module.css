@@ -1,0 +1,17 @@
+.cardWrapper{
+    background-color: var(--color-yellow);
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    border-radius: 16px;
+    color: white;
+}
+
+
+.wrapper{
+    /* padding: 22px; */
+    padding-top: 22px;
+    padding-bottom: 22px;
+}

@@ -1,0 +1,134 @@
+:root {
+  --color-blue: rgba(42, 75, 160, 1);
+  --color-dark-blue: rgba(21, 48, 117, 1);
+  --color-yellow: rgba(255, 200, 58, 1);
+  --color-dark-yellow: rgba(249, 176, 35, 1);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* * {
+  margin: 0;
+} */
+
+html, body {
+  height: 100%;
+ 
+}
+
+/* Reset default browser styles */
+h1, h2, h3, h4, p, span, button, label {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-family: 'Manrope', sans-serif;
+}
+
+em {
+  font-family: 'Manrope', sans-serif;
+  font-style: italic;
+}
+
+/* Heading 01 */
+h1 {
+  font-size: calc(2rem + 2vw); /* Responsive font size */
+}
+h1.bold {
+  font-weight: bold;
+}
+h1.semibold {
+  font-weight: 600; /* Semibold */
+}
+h1.medium {
+  font-weight: 500; /* Medium */
+}
+
+/* Heading 02 */
+h2 {
+  font-size: calc(1.5rem + 1vw); /* Responsive font size */
+}
+h2.bold {
+  font-weight: bold;
+}
+h2.semibold {
+  font-weight: 600; /* Semibold */
+}
+h2.medium {
+  font-weight: 500; /* Medium */
+}
+
+/* Heading 03 */
+h3 {
+  font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
+}
+h3.bold {
+  font-weight: bold;
+}
+h3.semibold {
+  font-weight: 600; /* Semibold */
+}
+h3.medium {
+  font-weight: 500; /* Medium */
+}
+
+/* Heading 04 */
+h4 {
+  font-size: calc(1rem + 0.25vw); /* Responsive font size */
+}
+h4.bold {
+  font-weight: bold;
+}
+h4.semibold {
+  font-weight: 600; /* Semibold */
+}
+h4.medium {
+  font-weight: 500; /* Medium */
+}
+
+/* Body 01 */
+p.body1 {
+  font-size: calc(1rem + 0.25vw); /* Responsive font size */
+  font-weight: 600; /* Semibold */
+}
+p.body1.medium {
+  font-weight: 500; /* Medium */
+}
+
+/* Body 02 */
+p.body2 {
+  font-size: calc(0.875rem + 0.25vw); /* Responsive font size */
+  font-weight: 600; /* Semibold */
+}
+p.body2.medium {
+  font-weight: 500; /* Medium */
+}
+
+/* Label */
+label {
+  font-size: 0.75rem; /* Static font size for labels */
+  font-weight: 500; /* Medium */
+}
+
+/* Button */
+button {
+  font-size: calc(0.875rem + 0.25vw); /* Responsive font size */
+  font-weight: bold;
+}
+button.small {
+  font-size: 0.75rem; /* Static font size for small buttons */
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+.css-zghsfl-MuiBadge-badge{
+  background-color: var(--color-yellow) !important;
+}
+
+

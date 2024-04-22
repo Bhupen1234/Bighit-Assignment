@@ -1,0 +1,45 @@
+.pricePlusButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.wrapper{
+    width: 160px;
+    /* height: 194px; */
+    height: 100%;
+    background-color: rgba(248, 249, 251, 1);
+   position: relative;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heartIcon{
+    position: absolute;
+    top: 7px;
+    left: 12px;
+cursor: pointer;
+
+}
+
+
+.image>img{
+    width:100% ;
+    height: 80%;
+    border-radius: 12px 12px 0px 0px;
+}
+.pricePlusButton{
+    margin-top: 10px;
+}
+
+.title{
+    color: rgba(97, 106, 125, 1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
